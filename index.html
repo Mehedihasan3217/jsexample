@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="js">
+        <meta name="description" content="lorem ipsum">
+        <meta name="keywords" content="html ,html css,html css tutorial">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="7 days">
+        <meta name="author" content="Mehedi Hasan">
+        <title>js</title>`
+        <!-- css links -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <!-- fav icon -->
+        <link rel="icon" href="images/img.jpg">
+</head>
+<body>
+ <div class="container">
+    <!-- ex1 text show --> <hr>
+    <h2>Click the button to show the text</h2>
+    <button class="btn btn-dark" type="button" onclick="textShow()">Show Text</button>
+    <h3 id="st"></h3>
+
+    <!-- ex2 text show --> <hr>
+    <h2>Click the button to show the date</h2>
+    <button class="btn btn-dark" type="button" onclick="showDate()">Show Date</button>
+    <h3 id="sd">Date is:</h3>
+
+    <!-- ex3 text change --> <hr>
+    <h2>Click the button to change the text</h2>
+    <button class="btn btn-dark" type="button" onclick="changeText()">change Text</button>
+    <h3 id="ct">Hello there</h3>
+
+    <!-- ex4 img change --> <hr>
+    <h2>Click the button to change the image</h2>
+    <button class="btn btn-dark" type="button" onclick=" bulbOn()">Bulb On</button>
+    <button class="btn btn-dark" type="button" onclick=" bulbOff()">Bulb Off</button>
+    <img id="boo" src="images/off.gif" alt="">
+
+    <!-- ex5 css change --> <hr>
+    <h2>Click the button to change the    css</h2>
+    <button class="btn btn-dark" type="button" onclick="changeColor()">change css</button>
+    <h3 id="color">Lorem ipsum dolor sit amet.</h3>
+
+    <!-- ex6 css change --> <hr>
+    <h2>Click the button to show/hide the text</h2>
+    <button class="btn btn-dark" type="button" onclick="showItem()">Show</button>
+    <button class="btn btn-dark" type="button" onclick="hideItem()">Hide</button>
+    <h3 id="sh">Lorem ipsum dolor sit amet.</h3>
+    
+    <!-- ex7 math --> <hr>
+    <h2>Click the button to show the math</h2>
+    <button class="btn btn-dark" type="button" onclick="showMath()">Ans</button>
+    <h3 id="mt">5+9=</h3>
+    
+    <!-- ex8 print --> <hr>
+    <h2>Click the button to print the current page</h2>
+    <button class="btn btn-dark" type="button" onclick="printPage()">Print Page</button>
+
+    <!-- ex9 display object --> <hr>
+      <h2>Display Object.</h2>
+      <button class="btn btn-dark" onclick="disPlay()">Click here</button>
+      <h3 id="dsp"></h3>
+
+    <!-- ex10 age --> <hr>
+     <h2>Input your age and see the result:</h2>
+     <input id="age" value="18" />
+     <button class="btn btn-dark" onclick="aGe()">Try it</button>
+     <h3 id="ages"></h3>
+
+    <!-- ex11 true/false --> <hr>
+    <h2>Click the button to see the true/false.</h2>
+    <button class="btn btn-dark" onclick="trueFalse()">Click here</button>
+   <h3 id="tf"> is this true or false(10 > 9):</h3>
+
+    <!-- ex12 show day --> <hr>
+    <h2>Click the button to see the day.</h2>
+    <button class="btn btn-dark" onclick="showDay()">Click here</button>
+   <h3 id="day">Day</h3>
+
+    <!-- ex13 fruits --> <hr>
+    <h2>Click the button to see the fruits reverse.</h2>
+    <button class="btn btn-dark" onclick="fruitsReverse()">Click here</button>
+   <h3 id="fruits">Banana,Orange,Apple,Mango.</h3>
+
+   <!-- ex14 variable --> <hr>
+    <h2>Click the button to show the result</h2>
+    <button class="btn btn-dark" type="button" onclick="showResult()">Show Result</button>
+    <h3 id="sr"></h3>
+
+      <!-- ex15 true or false --> <hr>
+    <h2>Click the button to show true or false</h2>
+    <button class="btn btn-dark" type="button" onclick="showTrue()">Show Result</button>
+    <h3 id="t_f"></h3>
+
+    <!-- ex16 see day --> <hr>
+    <h2>Click the button to show the result</h2>
+    <button class="btn btn-dark" type="button" onclick="seeDay()">Show Result</button>
+    <h3 id="cond"></h3>
+
+    <!-- ex17 name --> <hr>
+    <h2>Click the button to show the name</h2>
+    <button class="btn btn-dark" type="button" onclick="arRay()">Show Result</button>
+    <h3 id="ar"></h3>
+
+    <!-- ex18 JavaScript Strings --> <hr>
+    <h2>JavaScript Strings</h2>
+    <button class="btn btn-dark" type="button" onclick="strIngs()">Click here</button>
+    <h3 id="js"></h3>
+    <!-- ex19 at method --> <hr>
+    <h2>Get the last character of the text:</h2>
+    <button class="btn btn-dark" type="button" onclick="atMethod()">Click here</button>
+    <h3 id="at"></h3>
+
+    <!-- ex20 JavaScript Numbers --> <hr>
+    <h2>JavaScript Numbers</h2>
+    <button class="btn btn-dark" type="button" onclick="numBers()">Click here</button>
+    <h3 id="nm"></h3>
+
+    <!-- ex21 The constructor Propertyt --> <hr>
+    <h2>The constructor Property</h2>
+    <button class="btn btn-dark" type="button" onclick="conStructor()">Click here</button>
+    <h3 id="cp"></h3>
+
+    <!-- ex22 The Window Location Object --> <hr>
+    <h2>The assign Property</h2>
+    <button class="btn btn-dark" type="button" onclick="myFunction()">Load new document</button>
+
+
+    <!-- ex23 The language Property --> <hr>
+    <h2>The language Property</h2>
+    <button class="btn btn-dark" type="button" onclick="langPro()">Click here</button>
+    <h3 id="lp"></h3>
+
+    <!-- ex24 The cookieEnabled Property --> <hr>
+    <h2>The cookieEnabled Property</h2>
+    <button class="btn btn-dark" type="button" onclick="appPro()">Click here</button>
+    <h3 id="appp"></h3>
+
+    <!-- ex25 window alert --> <hr>
+    <h2>window alert</h2>
+    <button class="btn btn-dark" type="button" onclick="winDow()">Click here</button>
+    <h3 id="wa"></h3>
+   
+    <!-- ex26 JavaScript Validation API --> <hr>
+    <h2>The JavaScript Validation AP</h2>
+    <p>Enter a number and click OK:</p>
+    <input id="id1" type="number" max="100">
+    <button onclick="myyFunction()">OK</button>
+    <h3 id="nac"></h3>
+    
+
+    <!-- ex27 JavaScript Functions --> <hr>
+    <h2>JavaScript Functions</h2>
+    <button class="btn btn-dark" type="button" onclick="toCelsius(f)">Click here</button>
+    <h3 id="jf"></h3>
+
+    <!-- ex28 JavaScript Numbers --> <hr>
+    <h2>JavaScript Numbers</h2>
+    <button class="btn btn-dark" type="button" onclick="jaNumbers()">Click here</button>
+    <h3 id="janum"></h3>
+    <!-- ex29 JavaScript Math.floor --> <hr>
+    <h2>JavaScript Math.floor</h2>
+    <button class="btn btn-dark" type="button" onclick="jaMathe()">Click here</button>
+    <h3 id="jamath"></h3>
+
+    <!-- ex30 The pop() Method --> <hr>
+    <h2>The pop() Method</h2>
+    <button class="btn btn-dark" type="button" onclick="popMethod()">Click here</button>
+    <h3 id="pop"></h3>
+    <h3 id="pop2"></h3>
+ </div>
+    
+   <!-- js links -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
